@@ -81,6 +81,11 @@ NX-OSv9K is a demo version of the Nexus Operating System
 ```
 
 
+# Parsing data
+
+In the previous outputs, we output the entire XML tree to the screen, the Nexus.run_cmd()
+returns an ElementTree object, which can be used to find interesting stuff..
+
 # Finding Specific Values
 ```
 version = dist1.run_cmd('show version')
