@@ -4,11 +4,8 @@ from lxml import etree as ET
 import xmltodict
 import logging
 
-
-nexus = Nexus('10.82.9.100', 'kecorbin','R0yal5!!')
-print ET.tostring(nexus.run_cmd('show version'))
-print ET.tostring(nexus.run_cmd('show version'))
-
+dist1 = Nexus('192.168.51.128', 'admin', 'R0yal5!!')
+print ET.tostring(dist1.run_cmd('show version'))
 
 #
 #interfaces = dist1.run_cmd('show interface')
